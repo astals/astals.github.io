@@ -103,6 +103,19 @@ a:active, a:hover {
     text-decoration: underline;
 }
 
+@media screen and (orientation:portrait) {
+footer {
+    width: 75%;
+    margin: auto;
+    border-top: 1px solid #159957;
+    padding: 5px;
+    text-align: center;
+    color: #606c71;
+    bottom: 0px;
+}
+}
+
+@media screen and (orientation:landscape) {
 footer {
     width: 75%;
     margin: auto;
@@ -112,4 +125,5 @@ footer {
     font-size: small;
     color: #606c71;
     bottom: 0px;
+}
 }
