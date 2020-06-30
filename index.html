@@ -1,39 +1,32 @@
 <!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta charset="UTF-8">
-    <title>Astals; Just a personal site</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon.png">
-  </head>
-
-  <body>
-    <header>
-      <img class="header_image" src="astals.jpg">
-      <h2 class="header_title">Astals; Just a personal site</h2>
-      <a href="https://github.com/astals" class="header_item_social_media_pusher_item" target="_blank">
-        <img src="github.png" class="social_network_img">
-      </a>
-      <a href="https://linkedin.com/in/astals" class="header_item_social_media" target="_blank">
-        <img src="linkedin.png" class="social_network_img">
-      </a>
-      <!--<a href="https://a.a/astals" class="header_item_social_media" target="_blank">
-        <img src="linkedin.png" width="30px" height="30px">
-      </a>-->
-    </header>
-    <main>
-
-    <h2>Mind Maps & Diagrams</h2>
-
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam imperdiet varius ultricies. Aenean viverra nisi non lectus auctor porta. Vivamus quis maximus nisl. Sed imperdiet nulla in ipsum placerat auctor. Aliquam et dolor nec dui lacinia egestas. Nunc vitae hendrerit leo, nec ullamcorper lorem. Nam a sapien libero. Suspendisse finibus feugiat tempus. Aliquam erat volutpat. Phasellus commodo imperdiet rutrum. In eget orci tortor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla eleifend mi eget urna laoreet pharetra ac non augue.</p>
-        <p>
-        Proin vestibulum, purus sit amet pellentesque egestas, purus purus varius libero, at dapibus tellus lectus ac quam. Donec dignissim vitae diam at mattis. Suspendisse tincidunt libero sed libero pellentesque, ut fringilla erat ultrices. Duis finibus et quam nec dignissim. Maecenas sagittis ante tortor, non porta lorem bibendum scelerisque. Sed facilisis nisi sit amet risus accumsan, quis imperdiet mi suscipit. Nam efficitur elit nec nulla posuere, vel efficitur dolor consequat. Donec venenatis tempor sem, pretium pharetra tellus accumsan nec.</p>
-    </main>
-      <footer>
-        Created by Sublime Text, Stack Overflow, W3Schools & Google</br>
-        Page theme 99% inspired & copied from <a href="https://github.com/pages-themes/cayman" target="_blank">Cayman Theme</a>
-        <!-- If there is another missing acknowledgement, please contact me via LinkedIn -->
-      </footer>
-        
-  </body>
+	<html lang="en-US">
+		<head>
+			<meta charset="UTF-8">
+			<title>Astals; Just a personal site</title>
+			<link rel="stylesheet" href="styles/main.css">
+			<link rel="icon" type="image/png" sizes="96x96" href="/images/favicon.png">
+			<script  src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+		</head>
+		<body>
+			<header> </header>
+			<main>
+				<article>
+					<h2>Mind Maps & Diagrams</h2>
+					<p>Security oriented mind maps and diagrams. Ex: <a href="https://drive.google.com/file/d/1gR2dTyNRmyhW2ETu47jRq47T5z70IrXY/view?usp=sharing" target="_blank">Windows Authentication</a></p>
+					<a class="button_to_page reduce_top_p_margin" href="pages/mindmaps_and_diagrams.html">Read more >></a>
+				</article>
+				<article>
+					<h2>Lorem Ipsum</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel ultricies orci. Nullam molestie leo non iaculis malesuada. Nam erat nulla, tincidunt ac augue ac, feugiat dapibus augue. Praesent id elit pretium ex posuere dignissim sed in neque. Morbi pulvinar nec nunc sit amet lacinia. Pellentesque sit amet quam eu ex cursus sagittis a vitae libero. Fusce et lacus dolor.</p>
+					<a class="button_to_page reduce_top_p_margin" href="pages/lorem_ipsum.html">Read more >></a>
+				</article>
+			</main>
+			<footer> </footer>        
+		</body>
+		<script> 
+			$(function(){
+				$("header").load("html_commons/header_content.html"); 
+				$("footer").load("html_commons/footer_content.html"); 
+			});
+		</script>
 </html>
