@@ -124,6 +124,9 @@ footer {
 }
 
 @media screen and (orientation:portrait) {
+	.hide_on_portrait{
+		display: none;
+	}
 	footer {
 		font-size: xx-small;
 	}
