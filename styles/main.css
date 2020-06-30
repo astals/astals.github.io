@@ -112,15 +112,28 @@ a:active, a:hover {
 	text-decoration: none;
 }
 
-.button_to_page {
-	border: 1px solid #155799;
-	border-radius: 10px;
-	padding: 5px;
-	margin-right: 0.5em;
-	float:right;
-	font-size: medium;
+@media screen and (orientation:portrait) {
+	.button_to_page {
+		border: 1px solid #155799;
+		border-radius: 10px;
+		padding: 5px;
+		padding-top: 0px;
+		margin-right: 0.5em;
+		float:right;
+		font-size: x-large;
+	}	
 }
 
+
+@media screen and (orientation:landscape) {
+	.button_to_page {
+		border: 1px solid #155799;
+		border-radius: 10px;
+		padding: 5px;
+		margin-right: 0.5em;
+		float:right;
+	}	
+}
 .button_to_page:hover{
 	border: 1px solid #159957;
 	color: #159957;
@@ -131,11 +144,24 @@ a:active, a:hover {
 }
 
 
-table {
-	width: 90%;
-	margin: auto;
-	border-spacing: 0 0.5em;
+
+@media screen and (orientation:portrait) {
+	table {
+		width: 90%;
+		margin: auto;
+		border-spacing: 0 0.5em;
+		font-size: x-large;
+	}
 }
+
+@media screen and (orientation:landscape) {
+	table {
+		width: 90%;
+		margin: auto;
+		border-spacing: 0 0.5em;
+	}
+}
+
 
 tr{
 	padding: 5px;
