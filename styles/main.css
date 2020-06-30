@@ -27,23 +27,10 @@ header {
 	margin: auto 0px auto 10px;
 }
 
-
-
-@media screen and (orientation:portrait) {
-	.header_title {
-		cursor: pointer;
-		margin: auto 0px auto 10px;
-		color: white;
-		font-size: 1.4em;
-	}
-}
-
-@media screen and (orientation:landscape) {
-	.header_title {
-		cursor: pointer;
-		margin: auto 0px auto 10px;
-		color: white;
-	}
+.header_title {
+	cursor: pointer;
+	margin: auto 0px auto 10px;
+	color: white;
 }
 
 .header_item_social_media {
@@ -134,4 +121,16 @@ footer {
 	color: #606c71;
 	bottom: 0px;
 	margin-top: 20px;
+}
+
+@media screen and (orientation:portrait) {
+	footer {
+		font-size: xx-small;
+	}
+	.header_title, h2 {
+		font-size: 1.4em;
+	}
+	p, a, table, td, tr, th {
+		font-size: small
+	}
 }
