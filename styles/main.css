@@ -93,7 +93,7 @@ a:active, a:hover {
 	color: #159957;
 }
 
-.reduce_top_p_margin{
+.reduce_top_margin_05em{
 	margin-top: -0.5em;
 }
 
@@ -127,12 +127,15 @@ footer {
 	.hide_on_portrait{
 		display: none;
 	}
+	
 	footer {
 		font-size: xx-small;
 	}
+
 	.header_title, h2 {
 		font-size: 1.4em;
 	}
+
 	p, a, table, td, tr, th {
 		font-size: small
 	}
