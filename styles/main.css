@@ -1,82 +1,60 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 
+/**********************************************************************************************
+-- hard depencency with <meta name="viewport" content="width=device-width, initial-scale=1"> --
+**********************************************************************************************/
+
 html, body {
 	margin: 0;
 	height: 100%;
 	background-color: #f5f5f5;
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
-@media screen and (orientation:landscape) {
-	header {
-		display: flex;
-		height: 100px;
-		overflow: hidden;
-		color: #fff;
-		background-color: #159957;
-		background-image: linear-gradient(120deg, #155799, #159957);
-	}
 
-	.header_image{
-		cursor: pointer;
-		height: 85%;
-		border-radius: 50%;
-		margin: auto 0px auto 15px;
-	}
+header {
+	display: flex;
+	height: 100px;
+	overflow: hidden;
+	color: #fff;
+	background-color: #159957;
+	background-image: linear-gradient(120deg, #155799, #159957);
+}
 
+.header_image{
+	cursor: pointer;
+	height: 85%;
+	border-radius: 50%;
+	margin: auto 0px auto 15px;
+}
+
+
+@media screen and (orientation:portrait) {
 	.header_title {
 		cursor: pointer;
 		margin: auto 0px auto 15px;
 		color: white;
-		font-weight: bold;
-	}
-
-	.header_item_social_media {
-		margin: auto 15px 10px 0px;
-	}
-
-	.header_item_social_media_pusher_item {
-		margin: auto 15px 10px auto;
-	}
-	.social_network_img{
-		width: 30px;
-		height: 30px;
+		font-size: 1.4em
 	}
 }
 
-@media screen and (orientation:portrait) {
-	header {
-		display: flex;
-		height: 200px;
-		overflow: hidden;
-		color: #fff;
-		background-color: #159957;
-		background-image: linear-gradient(120deg, #155799, #159957);
-	}
-
-	.header_image {
-		height: 85%;
-		border-radius: 50%;
-		margin: auto 0px auto 15px;
-	}
-
+@media screen and (orientation:landscape) {
 	.header_title {
+		cursor: pointer;
 		margin: auto 0px auto 15px;
 		color: white;
-		font-weight: bold;
-		font-size: 40px;
 	}
+}
 
-	.header_item_social_media {
-		margin: auto 15px 10px 0px;
-	}
+.header_item_social_media {
+	margin: auto 15px 10px 0px;
+}
 
-	.header_item_social_media_pusher_item {
-		margin: auto 15px 10px auto;
-	}
-	.social_network_img{
-		width: 60px;
-		height: 60px;
-	}
+.header_item_social_media_pusher_item {
+	margin: auto 15px 10px auto;
+}
+.social_network_img{
+	width: 30px;
+	height: 30px;
 }
 
 main {
@@ -108,32 +86,20 @@ a {
 a:active, a:hover {
 	text-decoration: underline;
 }
+
 .button_to_page:active, .button_to_page:hover {
 	text-decoration: none;
 }
 
-@media screen and (orientation:portrait) {
-	.button_to_page {
-		border: 1px solid #155799;
-		border-radius: 10px;
-		padding: 5px;
-		padding-top: 0px;
-		margin-right: 0.5em;
-		float:right;
-		font-size: x-large;
-	}	
-}
-
-
-@media screen and (orientation:landscape) {
-	.button_to_page {
-		border: 1px solid #155799;
-		border-radius: 10px;
-		padding: 5px;
-		margin-right: 0.5em;
-		float:right;
-	}	
-}
+.button_to_page {
+	border: 1px solid #155799;
+	border-radius: 10px;
+	padding: 4px;
+	padding-top: 3px;
+	margin-right: 0.5em;
+	float:right;
+	font-size: small;
+}	
 .button_to_page:hover{
 	border: 1px solid #159957;
 	color: #159957;
@@ -144,24 +110,11 @@ a:active, a:hover {
 }
 
 
-
-@media screen and (orientation:portrait) {
-	table {
-		width: 90%;
-		margin: auto;
-		border-spacing: 0 0.5em;
-		font-size: x-large;
-	}
+table {
+	width: 90%;
+	margin: auto;
+	border-spacing: 0 0.5em;
 }
-
-@media screen and (orientation:landscape) {
-	table {
-		width: 90%;
-		margin: auto;
-		border-spacing: 0 0.5em;
-	}
-}
-
 
 tr{
 	padding: 5px;
@@ -170,29 +123,14 @@ th{
 	text-align: left;
 }
 
-@media screen and (orientation:portrait) {
-	footer {
-		width: 75%;
-		margin: auto;
-		border-top: 1px solid #159957;
-		padding: 5px;
-		text-align: center;
-		color: #606c71;
-		bottom: 0px;
-		margin-top: 20px;
-	}
-}
-
-@media screen and (orientation:landscape) {
-	footer {
-		width: 75%;
-		margin: auto;
-		border-top: 1px solid #159957;
-		padding: 5px;
-		text-align: center;
-		font-size: small;
-		color: #606c71;
-		bottom: 0px;
-		margin-top: 20px;
-	}
+footer {
+	width: 75%;
+	margin: auto;
+	border-top: 1px solid #159957;
+	padding: 5px;
+	text-align: center;
+	font-size: x-small;
+	color: #606c71;
+	bottom: 0px;
+	margin-top: 20px;
 }
