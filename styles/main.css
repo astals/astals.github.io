@@ -128,7 +128,7 @@ footer {
 		display: none;
 	}
 	
-	footer {
+	footer, footer > a {
 		font-size: xx-small;
 	}
 
