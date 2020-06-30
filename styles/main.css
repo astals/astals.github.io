@@ -13,7 +13,7 @@ html, body {
 
 header {
 	display: flex;
-	height: 100px;
+	height: 80px;
 	overflow: hidden;
 	color: #fff;
 	background-color: #159957;
@@ -24,33 +24,34 @@ header {
 	cursor: pointer;
 	height: 85%;
 	border-radius: 50%;
-	margin: auto 0px auto 15px;
+	margin: auto 0px auto 10px;
 }
+
 
 
 @media screen and (orientation:portrait) {
 	.header_title {
 		cursor: pointer;
-		margin: auto 0px auto 15px;
+		margin: auto 0px auto 10px;
 		color: white;
-		font-size: 1.4em
+		font-size: 1.4em;
 	}
 }
 
 @media screen and (orientation:landscape) {
 	.header_title {
 		cursor: pointer;
-		margin: auto 0px auto 15px;
+		margin: auto 0px auto 10px;
 		color: white;
 	}
 }
 
 .header_item_social_media {
-	margin: auto 15px 10px 0px;
+	margin: auto 10px 5px 0px;
 }
 
 .header_item_social_media_pusher_item {
-	margin: auto 15px 10px auto;
+	margin: auto 10px 5px auto;
 }
 .social_network_img{
 	width: 30px;
