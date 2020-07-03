@@ -1,2 +1,2 @@
 # astals.github.io
-Personal web page source code [astals.tk](astals.tk)
+Personal web page ([astals.tk](astals.tk)) source code 
