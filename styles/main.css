@@ -123,6 +123,11 @@ footer {
 	margin-top: 20px;
 }
 
+.footer_fontsize_big{
+	font-size: small;
+}
+
+
 @media screen and (orientation:portrait) {
 	.hide_on_portrait{
 		display: none;
@@ -130,6 +135,9 @@ footer {
 	
 	footer, footer > a {
 		font-size: xx-small;
+	}
+	.footer_fontsize_big, .footer_fontsize_big > a {
+		font-size: x-small;
 	}
 
 	.header_title, h2 {
