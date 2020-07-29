@@ -64,7 +64,7 @@
 			<article>
 			<h2>Media Queries & Device Type Detection Tests</h2>
 			<p>Do you remember when you were so proud of your 100% responsive Web, and then you open it on ...oh shit... WTF IS THIS. So this is why I created this page, to test the media queries I was using at that time and try to understand why that old iPad was not rendering the site as expected on portrait orientation.</p>
-			<p><b>Investigation result: </b>As you can se below, media queries are a lie where your 4k smartphone says it is a 360x640p 2010 smartphone. If you (as me) don't want to be part of this lie there are libraries that detect the device type that is on the web (based on the user agent), for this site I'm using <a href="https://www.scientiamobile.com/products/wurfl-js/" target="_blank">WURFL.js</a></p>
+			<p><b>Investigation result: </b>As you can se below, media queries are a lie where your 4k smartphone says it is a 360x640p 2010 smartphone. If you (as me) don't want to be part of this lie, there are libraries that detect the device type that is on the web (based on the user agent), for this site I'm using <a href="https://www.scientiamobile.com/products/wurfl-js/" target="_blank">WURFL.js</a></p>
 			<!-- https://docs.microsoft.com/en-us/archive/msdn-magazine/2015/february/cutting-edge-lightweight-client-side-device-detection-->
 			<!-- https://docs.microsoft.com/en-us/archive/msdn-magazine/2014/december/cutting-edge-effective-image-handling-in-responsive-web-sites-->
 
@@ -152,13 +152,12 @@
 				document.getElementById("js_detected_form_factor").innerHTML = form_factor;
 			}
 			else{
-				setTimeout(doStuff, 100);
+				setTimeout(check_if_form_factor_is_populated, 100);
 			}
 		}
 
 		populate_size();
 		window.onresize = populate_size;
-		setTimeout(check_if_form_factor_is_populated, 100);
-
+		check_if_form_factor_is_populated();
 	</script>
 </html>

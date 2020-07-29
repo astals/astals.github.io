@@ -144,6 +144,12 @@ footer {
 
 
 @media screen and (orientation:portrait) {
+	table {
+		width: 100%;
+	}
+	footer {
+		width: 95%;
+	}
 	.hide_on_portrait{
 		display: none;
 	}
